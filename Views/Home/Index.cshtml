@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Test_Bus.Models.Link>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="~/js/signalr/dist/browser/signalr.min.js"></script>
+<button onclick="window.location='@Url.Action("Create", "Home")'" class="btn btn-primary">Create New Link</button>
+<br />
+
+<table class="table">
+    <tr>
+        <th>Long</th>
+        <th>Short</th>
+        <th>Date Create</th>
+        <th>Count</th>
+        <th></th>
+    </tr>
+    @foreach (var link in Model)
+    {
+        <tr>
+            <td> <a href=@link.LongUrl>@link.LongUrl </a> </td>
+            <td> <a href=@link.ShortUrl>@link.ShortUrl</a></td>
+            <td>@link.DateCreate</td>
+            <td id=@link.Id>@link.Count</td>
+            <td>
+                <a asp-action="Edit" asp-route-id=@link.Id>Edit</a> |
+                <a asp-action="Delete" asp-route-id=@link.Id class="deleteLink"> Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+
+@section Scripts{
+
+    <script>
+        $(".deleteLink").on("click", function (event) {
+            event.preventDefault();
+            let isDelete = confirm("Are you sure?");
+            if (isDelete == false) { return }
+            window.location.href = $(this).attr("href");
+            
+        })
+    </script>
+
+    <script>
+        const hubConnection = new signalR.HubConnectionBuilder()
+            .withUrl("/home/index")
+            .build();
+
+        hubConnection.on("RedirectLink", function (linkId) {
+            document.getElementById(linkId).innerHTML = Number(document.getElementById(linkId).innerHTML) + 1;             
+
+        });         
+
+        hubConnection.start();
+    </script>
+
+}
