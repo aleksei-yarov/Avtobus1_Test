@@ -19,8 +19,8 @@
     @foreach (var link in Model)
     {
         <tr>
-            <td> <a href=@link.LongUrl>@link.LongUrl </a> </td>
-            <td> <a href=@link.ShortUrl>@link.ShortUrl</a></td>
+            <td> <a href=@link.LongUrl target="_blank">@link.LongUrl </a> </td>
+            <td> <a href=@link.ShortUrl target="_blank">@link.ShortUrl</a></td>
             <td>@link.DateCreate</td>
             <td id=@link.Id>@link.Count</td>
             <td>
