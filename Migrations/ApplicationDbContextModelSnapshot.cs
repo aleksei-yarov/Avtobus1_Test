@@ -36,6 +36,9 @@ namespace Test_Bus.Migrations
                     b.Property<string>("ShortUrl")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<int>("Testint")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("LinksAvtobus");

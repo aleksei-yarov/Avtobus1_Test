@@ -144,6 +144,16 @@ C:\Users\Галицкая Ангелина\source\repos\Test_Bus\obj\Debug\netco
 C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
+C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.TestBus20200713214919 - Web Deploy.json
+C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Common.dll
+C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.dll
+C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Protocols.dll
+C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Галицкая Ангелина\source\repos\Test_Bus\obj\Debug\netcoreapp3.1\Test_Bus.csproj.CoreCompileInputs.cache
 C:\Users\Галицкая Ангелина\source\repos\Test_Bus\obj\Debug\netcoreapp3.1\Test_Bus.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Галицкая Ангелина\source\repos\Test_Bus\bin\Debug\netcoreapp3.1\libman.json

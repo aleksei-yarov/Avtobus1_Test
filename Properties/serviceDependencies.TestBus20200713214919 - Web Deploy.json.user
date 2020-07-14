@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "signalr1": {
+      "restored": true,
+      "restoreTime": "2020-07-13T19:08:20.2018637Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2020-07-13T19:05:26.469451Z"
+    }
+  },
+  "parameters": {
+    "resourceGroup": {
+      "Type": "resourceGroup",
+      "Value": "TestBus20200712221847ResourceGroup"
+    },
+    "subscriptionId": {
+      "Type": "subscription",
+      "Value": "e4a5ee0e-1af0-4cab-81d3-ee11c6ba2da7"
+    }
+  }
+}

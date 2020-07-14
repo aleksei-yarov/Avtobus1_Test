@@ -14,6 +14,6 @@ namespace Test_Bus.Models
         public string LongUrl { get; set; }
         public string ShortUrl { get; set; }
         public DateTime DateCreate { get; set; } = DateTime.Now;
-        public int Count { get; set; } = 0;
+        public int Count { get; set; } = 0;        
     }
 }
