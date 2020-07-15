@@ -37,7 +37,11 @@ namespace Test_Bus.Controllers
                 
         public async Task<IActionResult> Redirection(string hash)
         {
-            var link = await _context.LinksAvtobus.FirstOrDefaultAsync(x => x.ShortUrl == Request.GetDisplayUrl());
+            var link = await _context.LinksAvtobus.FirstOrDefaultAsync(x => x.ShortUrl == Request.GetEncodedUrl());
+            if (link == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
             link.Count += 1;
             await _context.SaveChangesAsync();
             await _hubContext.Clients.All.SendAsync("RedirectLink", link.Id);
